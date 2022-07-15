@@ -27,5 +27,42 @@ def count_letter_frequency(words):
                 letter_frequency[ch] = 1
     return letter_frequency
 
+def score(word, freq):
+    seen = []
+    result = 0
+    for character in word:
+        if character not in seen:
+            result = result + freq[character]
+            seen = seen + [character]
+    return result
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
-word_list = get_word_list()
